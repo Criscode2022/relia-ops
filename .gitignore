@@ -8,4 +8,6 @@ artifacts
 .DS_Store
 .grok/preview.log
 .grok/og-pending
+.grok/skills
+.grok/references
 routeTree.gen.ts
