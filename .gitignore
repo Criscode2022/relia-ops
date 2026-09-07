@@ -1,0 +1,11 @@
+node_modules
+.vercel
+.output
+dist
+screenshots
+artifacts
+*.log
+.DS_Store
+.grok/preview.log
+.grok/og-pending
+routeTree.gen.ts
