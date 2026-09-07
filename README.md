@@ -6,6 +6,8 @@ Relia is a production-ready computerized maintenance management system (CMMS) fo
 
 Each signed-in operator gets an isolated workspace. The first visit seeds a realistic **Riverside Water Authority** plant so the board is never empty.
 
+**Source:** [github.com/Criscode2022/relia-ops](https://github.com/Criscode2022/relia-ops)
+
 ## What it does
 
 - **Board** — open work, emergency jobs, overdue PM, assets down, stores below min, MTTR
@@ -26,7 +28,7 @@ Each signed-in operator gets an isolated workspace. The first visit seeds a real
 | Data | Neon Postgres in production, PGLite in local/preview |
 | Charts | Recharts |
 
-Grok Build deploys this as a full-stack TypeScript app. Server functions are the Nest-style API layer: validated inputs, `authMiddleware`, and every query scoped to `context.userId`. Neon is the database.
+Server functions are the API layer: Zod-validated inputs, `authMiddleware`, and every query scoped to `context.userId`. Neon is the database.
 
 ## Local
 
@@ -35,7 +37,7 @@ npm install
 npm run dev
 ```
 
-Preview listens on port 8080. Sign in, then open **Board**. Raise work, issue a part, complete a job, generate a PM work order.
+Sign in, then open **Board**. Raise work, issue a part, complete a job, generate a PM work order.
 
 ```bash
 npm run typecheck
